@@ -1,11 +1,11 @@
 <template>
   <div id="app">
     <el-container>
-      <el-aside width="22%">
+      <el-aside width="21%">
         <MainAside/>
       </el-aside>
       <el-container>
-        <el-header height='15%'>
+        <el-header height='9%'>
           <div class="headContainer">
             <MainHeader/>
           </div>
@@ -20,8 +20,8 @@
 </template>
 
 <script>
-import MainAside from "./components/MainPage/MainAside";
-import MainHeader from "./components/MainPage/MainHeader";
+import MainAside from "./components/Home/MainAside";
+import MainHeader from "./components/Home/MainHeader";
 export default {
   name: 'App',
   components: {MainAside,MainHeader},
@@ -55,6 +55,8 @@ html, body, #app, .el-container {
 }
 
 .el-main {
+  position: relative;
+  padding: 0;
   background-color: #F3F5F9;
 }
 </style>
